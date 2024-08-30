@@ -1,4 +1,4 @@
 git add .
-git commit -m "コミットメッセージ"
+git commit -m "new"
 git push origin main
 
