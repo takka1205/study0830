@@ -3,13 +3,16 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const PostForm = async (title: string, email: string) => {
-  const res = await fetch(`http://localhost:3000/api/user`, {
-    method: "POST",
-    body: JSON.stringify({ title, email }),
-    headers: {
-      "Content-type": "application/josn",
-    },
-  });
+  const res = await fetch(
+    `https://study0830-j1cntmf0p-takka1205s-projects.vercel.app/api/user`,
+    {
+      method: "POST",
+      body: JSON.stringify({ title, email }),
+      headers: {
+        "Content-type": "application/josn",
+      },
+    }
+  );
   const data = await res.json();
 };
 
